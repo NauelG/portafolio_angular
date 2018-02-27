@@ -29,10 +29,11 @@ export class InformacionService {
      this.http.get("https://paginaweb-78b09.firebaseio.com/equipo.json")
       .subscribe( data=>{
         this.equipo = data.json();
-        console.log(this.equipo);
+        // console.log(this.equipo);
         this.cargada_sobre_nosotros = true;
 
       })
    }
+
 
 }
